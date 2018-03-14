@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.1",
+  "description": "My Personal Portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajha23/my-portfolio.git"
+  },
+  "author": "Akhilesh Jha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajha23/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/ajha23/my-portfolio#readme"
+}
