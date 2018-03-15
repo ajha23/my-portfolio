@@ -9,13 +9,12 @@ export default class Portfolio extends Component {
                 <hr class="w3-opacity" />
                 <div class="w3-row-padding" style={{ margin: "0 -16px" }}>
                     <div class="w3-half">
-                        <img src={Image} width="100%" />
-                        <img src={Image} width="100%" />
-                        <img src={Image} width="100%" />
+                        <img src={Image} alt="" style={{ width: "100%" }} />
+
                     </div>
                     <div class="w3-half">
-                        <img src={Image} width="100%" />
-                        <img src={Image} width="100%" />
+                        <img src={Image} alt="" style={{ width: "100%" }} />
+
                     </div>
                 </div>
             </div>
