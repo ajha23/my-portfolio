@@ -4,21 +4,21 @@ export default function Skills() {
     const skill = [{ name: "Javascript", level: "90" }, { name: "React", level: "80" }, { name: "HTML", level: "95" }]
 
     const skillList = skill.map((item) => (
-        <React.Fragment>
-            <p class="w3-wide">{item.name}</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:item.level + "%"}}>{item.level}%</div>
+        <React.Fragment key={item.name}>
+            <p className="w3-wide">{item.name}</p>
+            <div className="w3-light-grey">
+                <div className="w3-container w3-center w3-padding-small w3-dark-grey" style={{width:item.level + "%"}}>{item.level}%</div>
             </div>
         </React.Fragment>
     ))
     return (
         <React.Fragment>
             <h2>About</h2>
-            <hr class="w3-opacity" />
+            <hr className="w3-opacity" />
             <p>I'm a Interactive Developer from Bangalore, India.
         I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or exploring new places.
     </p>
-            <h3 class="w3-padding-16">My Skills</h3>
+            <h3 className="w3-padding-16">My Skills</h3>
             {skillList}
             <br />
         </React.Fragment>

@@ -5,7 +5,7 @@ import Testimonials from './Testimonials'
 
 export default function About() {
     return (
-        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <div className="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
             <Skills />
             <ClientInfo />
             <Testimonials />
