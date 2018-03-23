@@ -6,7 +6,9 @@ import Contact from './Contact'
 
 
 export default class PageContent extends Component {
-
+    addMsg = (msg) => {
+       console.log(msg)
+    }
     openNav = () => {
         document.getElementById("mySidebar").style.width = "60%";
         document.getElementById("mySidebar").style.display = "block";
@@ -17,8 +19,8 @@ export default class PageContent extends Component {
                 <span className="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style={{ width: "auto", right: 0 }} onClick={this.openNav}><i className="fa fa-bars"></i></span>
                 <Home />
                 <Portfolio />
-                <About />
-                <Contact />
+                <About/>
+                <Contact addMsg={this.addMsg}/>
                 {this.props.children}
             </div>
         )
