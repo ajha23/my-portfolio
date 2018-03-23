@@ -1,0 +1,8 @@
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/myPhoto.jpg');
+    min-height: 100%;
+}
