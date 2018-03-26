@@ -1,11 +1,12 @@
 import React from 'react';
-import { UncontrolledAlert } from 'reactstrap';
+import { Alert } from 'reactstrap';
 
-export default function Alert(props) {
+export default function BaseAlert(props) {
+    const { color, isOpen, toggle } = props
     return (
-        <UncontrolledAlert color={props.color}>
+        <Alert color={color} isOpen={isOpen} toggle={toggle} >
             {props.children}
-        </UncontrolledAlert>
+        </Alert>
     );
 }
 

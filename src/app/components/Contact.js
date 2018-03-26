@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-//import Alert from './Alerts'
+import BaseAlert from './Alerts'
+
 
 export default class Contact extends Component {
   constructor(props) {
@@ -8,7 +9,8 @@ export default class Contact extends Component {
       Name: '',
       Email: '',
       Subject: '',
-      Message: ''
+      Message: '',
+      alert: false
     }
   }
 
@@ -21,8 +23,11 @@ export default class Contact extends Component {
   formSubmit = (event) => {
     event.preventDefault();
     this.props.addMsg(this.state)
+    this.setState({ alert: true })
     this.contactForm.reset()
-
+  }
+  onDismiss = () => {
+    this.setState({ alert: false });
   }
   render() {
 
@@ -46,8 +51,11 @@ export default class Contact extends Component {
           <p>
             <button className="w3-button w3-light-grey w3-padding-large" type="submit" >
               <i className="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+            </button>
           </p>
+          <BaseAlert color="success" isOpen={this.state.alert} toggle={this.onDismiss}>
+            Thanks {this.state.Name} for your interest !!!
+          </BaseAlert>
         </form>
       </div>
     )

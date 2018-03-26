@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "firebase": "^4.12.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
@@ -24,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/ajha23/my-portfolio/issues"
   },
-  "homepage": "https://github.com/ajha23/my-portfolio#readme"
+  "homepage": "https://my-portfolio-23.firebaseapp.com/"
 }
