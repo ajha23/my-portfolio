@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import BaseAlert from './Alerts'
 
+
 export default class Contact extends Component {
   constructor(props) {
     super(props)
@@ -22,9 +23,7 @@ export default class Contact extends Component {
   formSubmit = (event) => {
     event.preventDefault();
     this.props.addMsg(this.state)
-    this.setState({
-      alert: true
-    })
+    this.setState({ alert: true })
     this.contactForm.reset()
   }
   onDismiss = () => {
