@@ -15,7 +15,7 @@ export default function Skills() {
         <React.Fragment>
             <h2>About</h2>
             <hr className="w3-opacity" />
-            <p>I'm a Interactive Developer from Bangalore, India.
+            <p>I'm a Web Developer from Bangalore, India.
         I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or exploring new places.
     </p>
             <h3 className="w3-padding-16">My Skills</h3>
