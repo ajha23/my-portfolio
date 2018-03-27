@@ -6,6 +6,7 @@ import Contact from './Contact'
 import Database from './Firebase'
 
 
+
 export default class PageContent extends Component {
     addMsg = (msg) => {
         const { Name, Email, Subject, Message } = msg
@@ -22,7 +23,6 @@ export default class PageContent extends Component {
         /*Database.ref('messages/' + 1522055308248).on('value', function (val) {
             console.log(val.val())
         })*/
-
     }
     openNav = () => {
         document.getElementById("mySidebar").style.width = "60%";
