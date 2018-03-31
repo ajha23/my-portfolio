@@ -6,7 +6,7 @@ export default class Navigation extends Component {
     }
 
     render() {
-        const nav = [{ navId: "#", name: "Home" }, { navId: "#portfolio", name: "Portfolio" }, { navId: "#about", name: "About" }, { navId: "#contact", name: "Contact" }]
+        const nav = [{ navId: "#", name: "Home" }, { navId: "#work", name: "Work" }, { navId: "#about", name: "About" }, { navId: "#contact", name: "Contact" }]
         return (
             <React.Fragment>
                 <nav className="w3-sidebar w3-black w3-animate-right w3-xxlarge" style={{ display: "none", paddingTop: "150px", right: 0, zIndex: 2 }} id="mySidebar">

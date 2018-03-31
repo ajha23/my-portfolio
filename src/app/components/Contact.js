@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import BaseAlert from './Alerts'
-
+import { ContactData } from './PortfolioData'
 
 export default class Contact extends Component {
   constructor(props) {
@@ -44,10 +44,12 @@ export default class Contact extends Component {
 
         <p>Swing by for a cup of <i className="fa fa-coffee"></i>, or leave me a note:</p>
         <form ref={input => this.contactForm = input} onSubmit={this.formSubmit}>
-          <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" onChange={this.onchangeInput} /></p>
-          <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" onChange={this.onchangeInput} /></p>
-          <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" onChange={this.onchangeInput} /></p>
-          <p><input className="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" onChange={this.onchangeInput} /></p>
+          {
+            ContactData
+              .map(
+                item => <p key={item.name}><input type="text" name={item.name} className="w3-input w3-padding-16 w3-border" placeholder={item.name} required onChange={this.onchangeInput} /></p>
+              )
+          }
           <p>
             <button className="w3-button w3-light-grey w3-padding-large" type="submit" >
               <i className="fa fa-paper-plane"></i> SEND MESSAGE

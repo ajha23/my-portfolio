@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Image1 from '../assets/myPhoto.jpg'
-import Image2 from '../assets/chevron.png'
+import ImagePunit from '../assets/punitNayak.jpg'
+import ImageGaurov from '../assets/gaurovOjha.jpg'
 import {
     Carousel,
     CarouselItem,
@@ -11,21 +11,23 @@ import {
 
 const items = [
     {
-        src: Image1,
-        altText: 'Avatar',
+        id:"1",
+        src: ImagePunit,
+        altText: 'Punith',
         data: {
-            name: 'Chandler Bing',
-            designation: 'Web Designer',
-            message: 'Akhilesh is just awesome. I am so happy to have met him!'
+            name: 'Punith Nayak',
+            designation: 'Software Engineer',
+            message: 'Akhilesh is an independent problem solver with a focus on implementing latest technologies in the front end space.'
         }
     },
     {
-        src: Image2,
-        altText: 'Avatar',
+        id:"2",
+        src: ImageGaurov,
+        altText: 'Gaurov',
         data: {
-            name: 'Chris Fox',
-            designation: 'CEO at Mighty Schools',
-            message: 'Akhilesh saved us from a web disaster'
+            name: 'Gaurov Ojha',
+            designation: 'Full Stack Developer',
+            message: 'Akhilesh is a blast to work with. His energy, creativity and demeanor make meetings and projects more interesting. His understanding of the strengths/limitations of different technologies helps projects to excel.'
         }
     }
 ];
@@ -69,7 +71,7 @@ export default class BaseCarousel extends Component {
                 <CarouselItem
                     onExiting={this.onExiting}
                     onExited={this.onExited}
-                    key={item.src}
+                    key={item.id}
                 >
                     <img src={item.src} alt={item.altText} className="w3-left w3-circle w3-margin-right" style={{ width: "80px" }} />
                     <p><span className="w3-large w3-text-black w3-margin-right">{item.data.name}.</span> {item.data.designation}.</p>
